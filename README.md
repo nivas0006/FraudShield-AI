@@ -261,22 +261,35 @@ FraudShield-AI
 
 ---
 
-# 📊 Datasets
+# 📂 Datasets
 
-The project supports multiple fraud detection datasets.
+FraudShield AI is designed to support multiple fraud detection datasets to evaluate machine learning models under different fraud scenarios.
 
-### PaySim
+| Dataset | Type | Class Distribution | Purpose |
+|----------|------|--------------------|---------|
+| **Credit Card Fraud Detection 2023** | Synthetic | 50% Fraud / 50% Legitimate | Primary benchmark dataset used for model training and evaluation. |
+| **IEEE-CIS Fraud Detection** | Real-world E-commerce | Highly Imbalanced | Supported for realistic fraud detection experiments involving online transactions. |
+| **PaySim** | Synthetic Mobile Money Transactions | Imbalanced | Supported for mobile payment fraud detection and research. |
 
-A synthetic mobile money transaction dataset designed for fraud detection research.
+---
 
-### IEEE-CIS Fraud Detection
+## 📌 Dataset Notes
 
-A real-world e-commerce fraud detection dataset containing transactional and identity information.
+The datasets used in this project have different characteristics and difficulty levels.
 
-### Credit Card Fraud Detection
+- **Credit Card Fraud Detection 2023** is a balanced synthetic dataset containing an equal number of fraudulent and legitimate transactions. Because of its balanced distribution and engineered feature space, machine learning models can achieve very high predictive performance.
 
-A highly imbalanced dataset containing European credit card transactions.
+- **IEEE-CIS Fraud Detection** is a real-world e-commerce fraud dataset with highly imbalanced classes, missing values, and complex feature relationships. It represents a significantly more challenging fraud detection problem.
 
+- **PaySim** is a synthetic simulation of mobile money transactions designed to emulate financial fraud scenarios while preserving realistic transaction behavior.
+
+---
+
+> **Current Benchmark**
+
+The performance metrics, leaderboard, and evaluation results presented in this repository are generated using the **Credit Card Fraud Detection 2023** dataset.
+
+The project architecture is designed to support **IEEE-CIS** and **PaySim**, allowing the same machine learning pipeline to be applied to datasets with different characteristics and fraud distributions.
 ---
 
 # 🤖 Machine Learning Models
