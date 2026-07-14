@@ -1,36 +1,27 @@
+from src.data.validator import validate_dataset
 from src.data.loader import load_dataset
-
 print("=" * 50)
 print("Testing PaySim")
 print("=" * 50)
-
 paysim = load_dataset("paysim")
-
+validate_dataset(paysim, "paysim")
 print(paysim.head())
 print(paysim.shape)
-
 print("\n")
-
 print("=" * 50)
 print("Testing IEEE-CIS")
 print("=" * 50)
-
 ieee = load_dataset("ieee")
-
+validate_dataset(ieee, "ieee")
 print(ieee.head())
 print(ieee.shape)
-
 print("\n")
-
 print("=" * 50)
 print("Testing Credit Card")
 print("=" * 50)
-
 credit = load_dataset("creditcard")
-
+validate_dataset(credit, "creditcard")
 print(credit.head())
 print(credit.shape)
-
 print("\n")
-
 print("SUCCESS!")
