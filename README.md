@@ -180,7 +180,7 @@ Datasets
 Data Loading
      │
      ▼
-EDA
+    EDA
      │
      ▼
 Preprocessing
@@ -189,10 +189,13 @@ Preprocessing
 Feature Engineering
      │
      ▼
-SMOTE
+   SMOTE
      │
      ▼
-Train/Test Split
+(only on)Train
+     │
+     ▼
+    Test split
      │
      ▼
 Model Training
