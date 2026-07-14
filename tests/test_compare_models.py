@@ -5,6 +5,7 @@ from src.models.logistic import build_model as logistic
 from src.models.decision_tree import build_model as decision_tree
 from src.models.random_forest import build_model as random_forest
 from src.models.xgboost_model import build_model as xgboost
+from src.models.save_model import save_model
 from src.models.lightgbm_model import build_model as lightgbm
 from src.models.trainer import train_model
 
@@ -38,6 +39,26 @@ for name, model in models.items():
     )
     metrics["Model"] = name
     results.append(metrics)
+leaderboard = pd.DataFrame(results)
+leaderboard = leaderboard.sort_values(
+    "ROC_AUC",
+    ascending=False
+)
+best_model_name = leaderboard.iloc[0]["Model"]
+
+print("\nBest Model:", best_model_name)
+trained_models = {
+    "Logistic Regression": models["Logistic Regression"],
+    "Decision Tree": models["Decision Tree"],
+    "Random Forest": models["Random Forest"],
+    "XGBoost": models["XGBoost"],
+    "LightGBM": models["LightGBM"],
+}
+
+save_model(
+    trained_models[best_model_name],
+    "best_model"
+)
 leaderboard = pd.DataFrame(results)
 leaderboard = leaderboard.sort_values(
     "ROC_AUC",
