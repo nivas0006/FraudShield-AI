@@ -8,6 +8,11 @@ from src.models.xgboost_model import build_model as xgboost
 from src.models.save_model import save_model
 from src.models.lightgbm_model import build_model as lightgbm
 from src.models.trainer import train_model
+from src.evaluation.plots import (
+    save_confusion_matrix,
+    save_roc_curve,
+    save_precision_recall
+)
 
 credit = load_dataset("creditcard")
 
@@ -58,6 +63,25 @@ trained_models = {
 save_model(
     trained_models[best_model_name],
     "best_model"
+)
+best_model = trained_models[best_model_name]
+
+save_confusion_matrix(
+    best_model,
+    X_test,
+    y_test
+)
+
+save_roc_curve(
+    best_model,
+    X_test,
+    y_test
+)
+
+save_precision_recall(
+    best_model,
+    X_test,
+    y_test
 )
 leaderboard = pd.DataFrame(results)
 leaderboard = leaderboard.sort_values(
