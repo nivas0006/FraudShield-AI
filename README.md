@@ -108,10 +108,10 @@ FraudShield AI addresses these challenges by:
 
 ## Machine Learning
 
-- Scikit-Learn
-- XGBoost
-- LightGBM
-- Imbalanced-Learn
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-orange?logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-red)
+![LightGBM](https://img.shields.io/badge/LightGBM-green)
+![Imbalanced-Learn](https://img.shields.io/badge/Imbalanced--Learn-blueviolet)
 
 ## Explainable AI
 
@@ -151,12 +151,12 @@ FraudShield AI addresses these challenges by:
                             ▼
                  Machine Learning Models
                             │
-        ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-        ▼          ▼          ▼          ▼          ▼
+   ┌─────--─────┬─────--────┬─────--─────┬───-───────┬
+   ▼            ▼           ▼            ▼           ▼
  Logistic   DecisionTree  RandomForest  XGBoost   LightGBM
  Regression
-        │
-        ▼
+                            │
+                            ▼
            Model Evaluation & Comparison
                             │
                             ▼
@@ -423,21 +423,6 @@ This project is licensed under the MIT License.
 
 ---
 
-# 👨‍💻 Author
-
-**Lakshmi Nivas Reddy**
-
-Computer Science and Engineering
-
-MS Ramaiah University of Applied Sciences
-
-Bengaluru, India
-
-GitHub: https://github.com/nivas0006
-
-LinkedIn: https://www.linkedin.com/in/lakshmi-nivas-reddy
-
----
 
 #  Acknowledgements
 
