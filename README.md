@@ -308,7 +308,7 @@ The best-performing model is automatically selected based on evaluation metrics.
 
 # 📈 Model Performance
 
-Five supervised machine learning models were trained and evaluated using the same preprocessing pipeline. Performance was measured using Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Training Time.
+Five supervised machine learning models were trained and evaluated using a unified preprocessing pipeline on the **Credit Card Fraud Detection 2023** dataset. Model performance was measured using Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Training Time.
 
 | Rank | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC | Training Time |
 |------|----------------------|---------:|----------:|-------:|---------:|---------:|--------------:|
@@ -317,6 +317,10 @@ Five supervised machine learning models were trained and evaluated using the sam
 | 🥉 | LightGBM | 0.999727 | 0.999842 | 0.999613 | 0.999727 | 0.999960 | 1.27 s |
 | 4 | Decision Tree | 0.999639 | 0.999648 | 0.999631 | 0.999639 | 0.999639 | 11.00 s |
 | 5 | Logistic Regression | 0.998294 | 0.998996 | 0.997591 | 0.998293 | 0.999807 | 0.61 s |
+
+> **Evaluation Context**
+>
+> The reported performance metrics were obtained using the **Credit Card Fraud Detection 2023** dataset. This dataset is a **synthetic, class-balanced benchmark** containing approximately **50% fraudulent** and **50% legitimate (non-fraudulent)** transactions. The balanced class distribution and highly informative feature representation make this dataset considerably easier to classify than real-world fraud datasets. Consequently, machine learning models can achieve substantially higher performance metrics on this benchmark than on highly imbalanced, real-world datasets such as IEEE-CIS.
 
 ## Best Performing Model
 
