@@ -14,7 +14,6 @@
 
 > **An Explainable Machine Learning System for Financial Fraud Detection using Ensemble Learning, Model Comparison, and Explainable AI (SHAP).**
 
-> **An Explainable Machine Learning System for Financial Fraud Detection using Ensemble Learning, Model Comparison, and Explainable AI (SHAP).**
 
 FraudShield AI is an end-to-end machine learning framework that detects fraudulent financial transactions using multiple publicly available datasets. The system integrates data preprocessing, feature engineering, model training, evaluation, explainability, and an interactive Streamlit dashboard into a unified pipeline.
 
